@@ -58,7 +58,8 @@ Checklist e resultados de teste: teste de layout,,,,
 ,,,,
 ,Correçao! o layout do formulário de reserva ,,,
 1,"Ao selecionar o botao ""Reservar"" Abre o ""Formulario de reservar""",aprovado,aprovado,
-2,"Dentro do ""formulario de reserva""  e  possivel ver uma seta onde podemos retortar ao ""Reservar um carro""",aprovado,aprovado,
+2,"Dentro do ""formulario de reserva""  e  possivel ver uma seta onde podemos retortar ao ""Reservar um carro
+""",aprovado,aprovado,
 3,Dentro do  formulario  de reserva aparece 3 opçoes de veiculos com a imagem do carro o nome e o valor,aprovado,aprovado,
 4,"""Casual"" ""$ """,aprovado,aprovado,
 5,"""Camping"" ""$ """,aprovado,aprovado,
@@ -94,7 +95,8 @@ Checklist e resultados de teste: teste de layout,,,,
 ,,,,
 ,"Correçao!interface do botão ""Reservar"" e janelas para confirmação e cancelamento de pedidos.",,,
 1,"a janela com o cabeçalho ""O carro foi reservado""",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/S3-34
-2,"abaixo o cronômetro que exibe o tempo de espera gratuito.",aprovado,aprovado,
+2,"abaixo o cronômetro que exibe o tempo de espera gratuito.
+",aprovado,aprovado,
 3,abaixo A marca e a placa do veiculo,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-13?jql=ORDER%20BY%20created%20DESC
 4,abaixo o ícone e o endereço do carro estão dentro dessa janela,aprovado,aprovado,
 5,"Encontra um botao de cancelar no meio ""X""",aprovado,aprovado,
