@@ -1,0 +1,104 @@
+Checklist e resultados de teste: teste de layout,,,,
+,,,,
+№,Descrição da revisão,Google chrome       800x600,firefox                      1920x1080,Link para o relatório de bug
+1,"Ao acessar o Urban.Routes e exibido o nome ""Plataforma""",Negado,Negado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-1?jql=ORDER%20BY%20created%20DESC
+2,"Ao acessar o Urban.Routes Os campos ""De"" e ""Para"" Aparecem vazios",Aprovado,Aprovado,
+3,"Ao acessar o Urban.Routes  Aparece um circulo vermelho antes do campo ""De""",Aprovado,Aprovado,
+4,"Ao acessar o Urban.Routes  Aparece um circulo Azul antes do campo ""Para""",Aprovado,Aprovado,
+5,"Ao acessar o Urban.Routes Os campos ""De"" e ""Para"" Ficam em vermelho com a mensagem ""Insira um endereço"" 
+",Aprovado,Aprovado,
+6,"Ao colocar odestino Aparece a opçao de corrida ""Optimal"" ",Aprovado,Aprovado,
+7,"Ao colocar odestino Aparece a opçao de corrida ""Flash""",Aprovado,Aprovado,
+8,"Ao colocar odestino Aparece a opçao de corrida ""Personal"" ",Aprovado,Aprovado,
+9,Ao colocar odestino Aparecem os icones dos meios de transporte,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-2?jql=ORDER%20BY%20created%20DESC
+10,"Ao colocar odestino e selecionar a opçao""Pesonal"" Aparece um veiculo azul ao lado dos textos ""Carsharing"" ""Duraçao""",Aprovado,Aprovado,
+11,"Ao colocar odestino e selecionar a opçao ""Pesonal"" Aparece o texto ""Carsharing""",Aprovado,Aprovado,
+12,"Ao colocar odestino e selecionar a opçao ""Pesonal"" Aparece o texto ""Duraçao""",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-3?jql=ORDER%20BY%20created%20DESC
+13,"Ao colocar odestino e selecionar a opçao ""Pesonal"" Aparece um botao azul escrito ""Reservar""",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-4?jql=ORDER%20BY%20created%20DESC
+14,"Ao selecionar ""Reservar"" Aparece a opçao de veiculos ""Casual""",Aprovado,Aprovado,
+15,"Ao selecionar ""Reservar"" Aparece a opçao de veiculos ""Camping""",Aprovado,Aprovado,
+16,"Ao selecionar ""Reservar"" Aparece a opçao de veiculos ""Luxury""",Aprovado,Aprovado,
+17,Ao selecionar a opçao de veiculos Aparece o nome do veiculo em negrito,Aprovado,Aprovado,
+18, Ao selecionar a opçao de veiculos Aparece o texto de finalidade do veiculo em negrito,Aprovado,Aprovado,
+19,"  Ao selecionar a opçao de veiculos Aparece o texto do tempo e a ""Espera gratuita""",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-5?jql=ORDER%20BY%20created%20DESC
+20,  Ao selecionar a opçao de veiculos Aparece uma imagem do veiculo,Aprovado,Aprovado,
+21,Ao selecionar a opçao de veiculos Aparece o texto de beneficios,aprovado,aprovado,
+22,"Ao selecionar ""Reservar"" Aparece a opçao ""Adicionar carteira de motorista"" com uma seta",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-6?jql=ORDER%20BY%20created%20DESC
+23,"Ao selecionar ""Reservar"" Ao adicionar a ""Carteira de motorista"" fica com uma borda verde e um ""V""",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-7?jql=ORDER%20BY%20created%20DESC
+24,"Ao selecionar ""Reservar"" Aparece a  opçao ""metodo de pagamento"" ""adicionar"" com um cartao e uma seta",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-8?jql=ORDER%20BY%20created%20DESC
+25,"Ao selecionar ""Reservar"" Aparece a opçao ""Requisitos do pedido",Aprovado,Aprovado,
+26,Ao selecionar a opçao requisitos do pedido ela expande liberando mais opçoes,Aprovado,Aprovado,
+27,"Ao selecionar a opçao requisitos do pedido ela expande liberando a opçao ""Carregador de telefone""",aprovado,aprovado,
+28,"Ao selecionar a opçao requisitos do pedido ela expande liberando a opçao ""musica suave para tarifa luxury""",Aprovado,Aprovado,
+29," Ao selecionar ""Reservar"" Aparece a  opçao ""Adicionar carteira de motorista e reservar""",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-9?jql=ORDER%20BY%20created%20DESC
+30,"Na opçao ""Adicionar carteira de motorista e reservar"" em baixo aparece ""o tempo da rota e os quilometros""",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-10?jql=ORDER%20BY%20created%20DESC
+31,"Cadastrando a ""carteteira de motorista"" a opçao fica ""Adicionar um metodo de pagamento e reservar""",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-11?jql=ORDER%20BY%20created%20DESC
+32,"Na opçao ""Adicionar um metodo de pagamento e reservar"" em baixo aparece ""o tempo da rota e os quilometros""",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-10?jql=ORDER%20BY%20created%20DESC
+33,"Cadastrando o cartao a opçao fica ""Reservar""",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-12?jql=ORDER%20BY%20created%20DESC
+34,"Na opçao ""Reservarr"" em baixo aparece ""o tempo da rota e os quilometros""",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-10?jql=ORDER%20BY%20created%20DESC
+35,"Ao selecionar a opçao ""Reservar abre um pop-up com as informaçoes da corrida",Aprovado,Aprovado,
+36,"No Pop-up aparece ""O carro foi reservado""",Aprovado,Aprovado,
+37,"No Pop-up aparece ""Espera gratuita com os minutos""",Aprovado,Aprovado,
+38,No Pop-up aparece aparece o modelo do carro juntamento com a placa,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-13?jql=ORDER%20BY%20created%20DESC
+39,No Pop-up aparece uma imagem do carro,Aprovado,Aprovado,
+40,"No Pop-up aparece aparece um botao com um ""X"" Cancelar",Aprovado,Aprovado,
+41,No Pop-up aparece Aparece o endereço do carro,Aprovado,Aprovado,
+42," No Pop-up aparece aparece "" Saber mais sobre a viagem""",Aprovado,Aprovado,
+43,UM bug que nao deixa clicar em nenhum botao no pop-up me impede de continuar a analise de layout,,,
+,,,,
+,Mapa,,,
+44,"No canto superior esquedo aparece a opçao ""mapa""",Aprovado,Aprovado,
+45,"No canto superior esquedo aparece a opçao ""Satelite""",Aprovado,Aprovado,
+46,"No canto superior esquedo aparece a opçao ""Modo de tela cheia""",Aprovado,Aprovado,
+47,"No canto inferior direito aparece a opçao Zoom ""+""",Aprovado,Aprovado,
+48,"No canto inferior direito aparece a opçao Zoom ""-""",Aprovado,Aprovado,
+49,"No canto inferior direito aparece Um ""Boneco laranja"" para aproximaçao do mapa",aprovado,aprovado,
+50,"Clicando na opçao ""Mapa"" Libera a opçao ""Relevo""",aprovado,aprovado,
+51,"Clicando na opçao ""Satelite"" Libera a opçao ""Marcadores""",aprovado,aprovado,
+,,,,
+,Correçao! o layout do formulário de reserva ,,,
+1,"Ao selecionar o botao ""Reservar"" Abre o ""Formulario de reservar""",aprovado,aprovado,
+2,"Dentro do ""formulario de reserva""  e  possivel ver uma seta onde podemos retortar ao ""Reservar um carro""",aprovado,aprovado,
+3,Dentro do  formulario  de reserva aparece 3 opçoes de veiculos com a imagem do carro o nome e o valor,aprovado,aprovado,
+4,"""Casual"" ""$ """,aprovado,aprovado,
+5,"""Camping"" ""$ """,aprovado,aprovado,
+6,"""Luxury"" ""$""",aprovado,aprovado,
+7,"Quando selecionamos uma das opçoes de ""Escolher uma tarifa de compartilhamento"" o campo e destacado e o texto aparece em negrito",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/S3-30
+8,"Trabalharemos com  a opçao ""Casual"" Na qual aparece como padrao quando sellecionamos o botao ""Reservar""",Aprovado,Aprovado,
+9,Logo abaixo dos 3 veiculos aparece um quadrado com as informaçoes do veiculo e da viagem,Aprovado,Aprovado,
+10,"1- Aparece o modelo do veiculo ""BMW 750"" em negrito",Aprovado,Aprovado,
+11,"2- Abaixo aparece a A descrição da tarifa ""Apenas negocios, nada extra"" em negrito (Cabeçalho)",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/S3-31
+12,3- abaixo aparece O tempo de viagem do carro até o ponto juntamente com um icone (Legenda),Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-5?jql=ORDER%20BY%20created%20DESC
+13,"4- ao lado aparece O tempo de espera gratuito ""15 minutos de espera gratuita""(Legenda)
+",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-5?jql=ORDER%20BY%20created%20DESC
+14,5-abaixo aparece Uma imagem do carro (Imagem do  veiculo),aprovada,aprovada,
+15,"6- abaixo aparece os Parâmetros adicionais ""camera de painel * carregador de telefone""",aprovado,aprovado,
+,,,,
+,Correçao do layout dos icones dos carros no mapa,,,
+1,O sistema escolhe automaticamente o carro que está mais próximo do usuário,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/S3-32
+2,O ícone do carro mais próximo no mapa fica maior,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/S3-32
+3,a caixa preta com a marca do carro aparece sobre o ícone.,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/S3-32
+4,O resto dos carros disponíveis continua sendo exibido no mapa em forma de ícone,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/S3-32
+5,"Neste caso, o mapa exibe carros com base em todas as tarifas",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/S3-32
+6,O usuário pode escolher um carro no mapa e reservá-lo ,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/S3-32
+7,"clicando no ícone correspondente. O ícone fica maior, e a caixa preta com a marca do carro aparece sobre ele.",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/S3-32
+,,,,
+,"Correçao do layout do painel ""Requisitos do pedido""",,,
+1,"Tarifa sendo usada ""Casual",,,
+2,"É uma lista suspensa. Ela fecha se a tarifa padrão ""Casual"" for escolhida. Se o usuário escolher outra tarifa, a lista abre automaticamente",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/S3-33
+3,"Barra de status ""Oculto""",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/S3-33
+4,Barra de conteúdo,,,
+5,Carregador de telefone,aprovado,aprovado,
+6,"Luzes de discoteca Disponível na tarifa luxury (Muda a tarifapara ""Luxury”)",aprovado,aprovado,
+7,"""Luxury Caixas de seleção (Selecionado/Não selecionado)",aprovado,aprovado,
+,,,,
+,"Correçao!interface do botão ""Reservar"" e janelas para confirmação e cancelamento de pedidos.",,,
+1,"a janela com o cabeçalho ""O carro foi reservado""",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/S3-34
+2,"abaixo o cronômetro que exibe o tempo de espera gratuito.",aprovado,aprovado,
+3,abaixo A marca e a placa do veiculo,Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S3/issues/S3-13?jql=ORDER%20BY%20created%20DESC
+4,abaixo o ícone e o endereço do carro estão dentro dessa janela,aprovado,aprovado,
+5,"Encontra um botao de cancelar no meio ""X""",aprovado,aprovado,
+6,abaixo o endereço do veiculo,aprovado,aprovado,
+7,"abaixo o custo da viagem ""Saber mais sobre a viagem""",aprovado,aprovado,
+,"Clicando no botao cancelar ""X"" E exibida a mensagem ""Tem certeza que deseja cancelar a corrida? Com 2 botoes (Sim) em azul (Nao) cinza",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/S3-35
+,"clicando na opçao sim exibe outra mensagem "" a corrida foi canceleda""",Reprovado,Reprovado,https://lnzzepphyr-1709991917578.atlassian.net/browse/S3-35
