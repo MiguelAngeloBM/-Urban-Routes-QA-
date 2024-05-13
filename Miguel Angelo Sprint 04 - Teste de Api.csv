@@ -1,0 +1,841 @@
+,Descrição,Resultado esperado,Status,Link para o relatório de bug
+POST /api/v1/kits/{id}/products,,,,
+,"Enviar requisiçao POST para inserir um item no  KIT: 
+ {
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": 1
+        }
+    ]
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Item adicionado com sucesso,,
+,"Enviar requisiçao POST para adicionar mais quantidade ao item no  KIT: 
+ {
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": 50
+        }
+    ]
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Quantidade  de itens adicionado com sucesso,,
+,"Enviar requisiçao POST para Reduzir a quantidade de items no  KIT: 
+ {
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": -50
+        }
+    ]
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Quantidade de itens reduzida com sucesso,,
+,"Enviar requisiçao POST Com o campo ""ID""vazio"" no  KIT: 
+ {
+    ""productsList"": [
+        {
+            ""id"": ,
+            ""quantity"": 1
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,"https://lnzzepphyr-1709991917578.atlassian.net/issues/S4-1?atlOrigin=eyJpIjoiNjFiZjZhOTdhZjUzNDQ0OThjNWU3NmY5MDVhOTRiY2EiLCJwIjoiaiJ9&jql=project%20%3D%20""S4""%20ORDER%20BY%20created%20DESC"
+,,Não há erros na estrutura da resposta,,
+,,Nao e possivel adicionar um item sem uma ID,,
+,"Enviar requisiçao POST Com letras no campo ""ID"" no  KIT: 
+ {
+    ""productsList"": [
+        {
+            ""id"": ""Batata"",
+            ""quantity"": 1
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-2
+,,Não há erros na estrutura da resposta,,
+,,Nao e possivel adicionar um item com letras no lugar do ID,,
+,"Enviar requisiçao POST Com Simblos  no campo ""ID"" no  KIT: 
+ {
+    ""productsList"": [
+        {
+            ""id"": ""!@#"",
+            ""quantity"": 1
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-3
+,,Não há erros na estrutura da resposta,,
+,,Nao e possivel adicionar um item com Simbolos no lugar do ID,,
+,"Enviar requisiçao POST Sem numeros  no campo ""ID"" no  KIT: 
+ {
+    ""productsList"": [
+        {
+            ""id"":,
+            ""quantity"": 1
+        }
+    ]
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Nao e possivel adicionar um item sem numeros no lugar do ID,,
+,"Enviar requisiçao POST Excluindo o campo ""ID"" no  KIT: 
+ {
+    ""productsList"": [
+        {
+   
+            ""quantity"": 1
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Nao e possivel adicionar um item sem o campo ID,,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-4
+,"Enviar requisiçao POST Sem numeros no campo ""quantity"" no kit
+ {
+    ""productsList"": [
+        {
+            ""id"":1,
+            ""quantity"": 
+        }
+    ]
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Nao e possivel adicionar um item sem numeros no lugar do quantity,,
+,"Enviar requisiçao POST Com letras no campo ""quantity"" no kit
+ {
+    ""productsList"": [
+        {
+            ""id"":1,
+            ""quantity"": ""batata""
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-5
+,,Não há erros na estrutura da resposta,,
+,,Nao e  possivel adicionar um item com letras no campo quantity,,
+,"Enviar requisiçao POST Com simbolos no campo ""quantity"" no kit
+ {
+    ""productsList"": [
+        {
+            ""id"":1,
+            ""quantity"": ""!@#!@#""
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-6
+,,Não há erros na estrutura da resposta,,
+,,Nao e  possivel adicionar um item com simbolos no campo quantity,,
+,"Enviar requisiçao POST Excluindo o campo ""quantity"" no  KIT: 
+  {
+    ""productsList"": [
+        {
+            ""id"":1,
+        
+        }
+    ]
+}
+
+",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Nao e possivel adicionar um item sem o campo quantity,,
+,"Enviar requisiçao POST Excluindo o campo ""quantity"" no  KIT: 
+  {
+    ""productsList"": [
+        {
+            ""id"":1,
+        
+        }
+    ]
+}
+
+",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Nao e possivel adicionar um item sem o campo quantity,,
+,"Enviar requisiçao POST Apagando  o  campo ""ID"" e o ""quantity""
+ {
+    ""productsList"": [
+        {
+
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"Nao e  possivel adicionar um item Sem os campos  ""ID"" e o ""quantity""",,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-7
+,"Enviar requisiçao POST Valor super longo (mínimo de 30 caracteres) ao item no  KIT: 
+ {
+    ""productsList"": [
+        {
+            ""id"": 012345678901234567890123456789,
+            ""quantity"": 50
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Impossivel criar item com valores super longos ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-40
+,"Enviar requisiçao POST Valor super longo (mínimo de 30 caracteres) ao item no  KIT: 
+ {
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"":012345678901234567890123456789
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Impossivel criar item com valores super longos ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-41
+,"Enviar requisiçao POST  ""productsList"": teste com uma matriz vazia {""productsList"":[]}  ao item no  KIT: 
+ {
+    ""productsList"": [ ]}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Impossivel criar item com valores super longos ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-42
+,"Enviar requisiçao POST  objeto válido em vez de uma matriz {""productsList"":{""id"":1, ""quantidade"":1}}
+ {""productsList"":{""id"":1, ""quantidade"":1}}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Impossivel criar item com valores super longos ,,"https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S4/issues/S4-43?filter=allissues&jql=project%20%3D%20""S4""%20ORDER%20BY%20created%20DESC"
+,"Enviar requisiçao POST uma string vazia {""productsList"":""""}.}}
+ {""productsList"":""""}.}}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Impossivel criar item com valores super longos ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-44
+,,,,
+Teste da Url /api/v1/kits/{id}/products,,,,
+,Enviar requisiçao Post ( /api/v1/kits/{id}/products)  Com ID certo do kit,Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,O kit e gerado,,
+,Enviar requisiçao Post ( /api/v1/kits/{id}/products)  Com letras no ID,Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-8
+,,Não há erros na estrutura da resposta,,
+,,nao e possivel adicionar o kit,,
+,Enviar requisiçao Post ( /api/v1/kits/{id}/products)  Com simbolos no ID,Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,nao e possivel adicionar o kit,,
+,Enviar requisiçao Post ( /api/v1/kits/{id}/products)  sem adicionar nenhum ID,Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,nao e possivel adicionar o kit,,
+,Enviar requisiçao Post ( /api/v1/kits/{id}/products)  sem adicionar o ID correto,Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,nao e possivel adicionar o kit,,
+PUT /api/v1/orders/:id,,,,
+,"Enviar requisiçao PUT para inserir um item no  KIT: 
+ {
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"": 1
+        }
+    ]
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Item adicionado com sucesso,,
+,"Enviar requisiçao PUT Com o campo ""ID""vazio"" no  KIT: 
+ {
+    ""productsList"": [
+        {
+            ""id"": ,
+            ""quantity"": 1
+        }
+    ]
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Nao e possivel adicionar um item sem uma ID,,
+,"Enviar requisiçao PUT Com letras no campo ""ID"" no  KIT: 
+ {
+    ""productsList"": [
+        {
+            ""id"": ""Batata"",
+            ""quantity"": 1
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Nao e possivel adicionar um item com letras no lugar do ID,,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-9
+,"Enviar requisiçao PUT Com Simblos  no campo ""ID"" no  KIT: 
+ {
+    ""productsList"": [
+        {
+            ""id"": ""!@#"",
+            ""quantity"": 1
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Nao e possivel adicionar um item com Simbolos no lugar do ID,,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-10
+,"Enviar requisiçao PUT Sem numeros  no campo ""ID"" no  KIT: 
+ {
+    ""productsList"": [
+        {
+            ""id"":,
+            ""quantity"": 1
+        }
+    ]
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Nao e possivel adicionar um item sem numeros no lugar do ID,,
+,"Enviar requisiçao PUT Excluindo o campo ""ID"" no  KIT: 
+ {
+    ""productsList"": [
+        {
+   
+            ""quantity"": 1
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Nao e possivel adicionar um item sem o campo ID,,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-11
+,"Enviar requisiçao PUT Sem numeros no campo ""quantity"" no kit
+ {
+    ""productsList"": [
+        {
+            ""id"":1,
+            ""quantity"": 
+        }
+    ]
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Nao e possivel adicionar um item sem numeros no lugar do quantity,,
+,"Enviar requisiçao PUT Com letras no campo ""quantity"" no kit
+ {
+    ""productsList"": [
+        {
+            ""id"":1,
+            ""quantity"": ""batata""
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Nao e  possivel adicionar um item com letras no campo quantity,,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-12
+,"Enviar requisiçao PUT Com simbolos no campo ""quantity"" no kit
+ {
+    ""productsList"": [
+        {
+            ""id"":1,
+            ""quantity"": ""!@#!@#""
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Nao e  possivel adicionar um item com simbolos no campo quantity,,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-13
+,"Enviar requisiçao PUT Excluindo o campo ""quantity"" no  KIT: 
+  {
+    ""productsList"": [
+        {
+            ""id"":1,
+        
+        }
+    ]
+}
+
+",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Nao e possivel adicionar um item sem o campo quantity,,
+,"Enviar requisiçao PUT Apagando  o  campo ""ID"" e o ""quantity""
+ {
+    ""productsList"": [
+        {
+
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"Nao e  possivel adicionar um item Sem os campos  ""ID"" e o ""quantity""",,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-14
+,"Enviar requisiçao PUT Valor super longo (mínimo de 30 caracteres) ao item no  KIT: 
+ {
+    ""productsList"": [
+        {
+            ""id"": 012345678901234567890123456789,
+            ""quantity"": 50
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Impossivel criar item com valores super longos ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-45
+,"Enviar requisiçao PUT Valor super longo (mínimo de 30 caracteres) ao item no  KIT: 
+ {
+    ""productsList"": [
+        {
+            ""id"": 1,
+            ""quantity"":012345678901234567890123456789
+        }
+    ]
+}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Impossivel criar item com valores super longos ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-46
+,"Enviar requisiçao PUT ""productsList"": teste com uma matriz vazia {""productsList"":[]}  ao item no  KIT: 
+ {
+    ""productsList"": [ ]}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Impossivel criar item com valores super longos ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-47
+,"Enviar requisiçao PUT objeto válido em vez de uma matriz {""productsList"":{""id"":1, ""quantidade"":1}}
+ {""productsList"":{""id"":1, ""quantidade"":1}}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Impossivel criar item com valores super longos ,,"https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S4/issues/S4-48?filter=allissues&jql=project%20%3D%20""S4""%20ORDER%20BY%20created%20DESC"
+,"Enviar requisiçao PUT uma string vazia {""productsList"":""""}.}}
+ {""productsList"":""""}.}}",Código de resposta e status 200 OK,REPROVADO,
+,,Não há erros na estrutura da resposta,,
+,,Impossivel criar item com valores super longos ,,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-49
+Teste da Url  /api/v1/orders/:id,,,,
+,Enviar requisiçao Post ( /api/v1/kits/{id}/products)  Com ID certo do kit,Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,O kit e gerado,,
+,Enviar requisiçao Post ( /api/v1/kits/{id}/products)  Com letras no ID,Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-15
+,,Não há erros na estrutura da resposta,,
+,,nao e possivel adicionar o kit,,
+,Enviar requisiçao Post ( /api/v1/kits/{id}/products)  Com simbolos no ID,Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-16
+,,Não há erros na estrutura da resposta,,
+,,nao e possivel adicionar o kit,,
+,Enviar requisiçao Post ( /api/v1/kits/{id}/products)  sem adicionar nenhum ID,Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,nao e possivel adicionar o kit,,
+,Enviar requisiçao Post ( /api/v1/kits/{id}/products)  sem adicionar o ID correto,Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,nao e possivel adicionar o kit,,
+GET /api/v1/orders/:id,,,,
+,Enviar  Requisiçao Get (GET /api/v1/orders/:id) Colocando o ID corretamente,Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,O kit e gerado,,
+,Enviar  Requisiçao Get (GET /api/v1/orders/:id) Colocando o ID Inexistente,Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,nao e possivel adicionar o kit,,
+,Enviar  Requisiçao Get (GET /api/v1/orders/:id) Colocando letras no ID,Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-17
+,,Não há erros na estrutura da resposta,,
+,,nao e possivel adicionar o kit,,
+,Enviar  Requisiçao Get (GET /api/v1/orders/:id) Colocando Simbolos no ID,Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-18
+,,Não há erros na estrutura da resposta,,
+,,nao e possivel adicionar o kit,,
+,Enviar  Requisiçao Get (GET /api/v1/orders/:id) Sem colocar  o ID,Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-19
+,,Não há erros na estrutura da resposta,,
+,,nao e possivel adicionar o kit,,
+DELETE /api/v1/orders/:id,,,,
+,Enviar  Requisiçao Delet (DELETE /api/v1/orders/:id) Deletenado o pedido,Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-21
+,,Não há erros na estrutura da resposta,,
+,,O kit e gerado,,
+,Enviar  Requisiçao Delet (DELETE /api/v1/orders/:id) Deletenado o pedido inexistente,Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-20
+,,Não há erros na estrutura da resposta,,
+,,nao e possivel adicionar o kit,,
+,Enviar  Requisiçao Delet (DELETE /api/v1/orders/:id) Deletenado o pedido com ID vazio,Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,nao e possivel adicionar o kit,,
+POST /order-and-go/v1/delivery,,,,
+,"Enviar requisao POST com os seguintes parametros
+{
+    ""deliveryTime"": 9,
+    ""productsCount"": 1,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+Testes dos parametros dos Requisitos (|Horas) 08-22,,,,
+,"Enviar requisao POST com os seguintes parametros    ""deliveryTime"": 7,
+{
+    ""deliveryTime"": 7,
+    ""productsCount"": 1,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-22
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": false,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com os seguintes parametros    ""deliveryTime"": 8,
+{
+    ""deliveryTime"": 8,
+    ""productsCount"": 1,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com os seguintes parametros    ""deliveryTime"": 9,
+{
+    ""deliveryTime"": 9,
+    ""productsCount"": 1,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com os seguintes parametros    ""deliveryTime"": 21,
+{
+    ""deliveryTime"": 21,
+    ""productsCount"": 1,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com os seguintes parametros    ""deliveryTime"": 22,
+{
+    ""deliveryTime"": 22,
+    ""productsCount"": 1,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com os seguintes parametros    ""deliveryTime"": 23,
+{
+    ""deliveryTime"": 23,
+    ""productsCount"": 1,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-23
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": false,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+Testes dos parametros dos Requisitos (Itens por pedido) 0-9I10-15 ,,,,
+,"Enviar requisao POST com os seguintes parametros     ""productsCount"": -1,
+{
+    ""deliveryTime"": 9,
+    ""productsCount"": -1,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-24
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": false,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros     ""productsCount"":0,
+{
+    ""deliveryTime"": 9,
+    ""productsCount"": 0,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros     ""productsCount"":1,
+{
+    ""deliveryTime"": 9,
+    ""productsCount"": 1,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros     ""productsCount"":8,
+{
+    ""deliveryTime"": 9,
+    ""productsCount"": 8,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros     ""productsCount"":9,
+{
+    ""deliveryTime"": 9,
+    ""productsCount"": 9,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros     ""productsCount"":10,
+{
+    ""deliveryTime"": 9,
+    ""productsCount"": 10,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros     ""productsCount"":11,
+{
+    ""deliveryTime"": 9,
+    ""productsCount"": 11,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros     ""productsCount"":14,
+{
+    ""deliveryTime"": 9,
+    ""productsCount"": 14,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros    "" ""productsCount"": 15,
+{
+    ""deliveryTime"": 9,
+    ""productsCount"": 15,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros     ""productsCount"" 16,
+{
+    ""deliveryTime"": 9,
+    ""productsCount"": 16,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,REPROVADO,"https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S4/issues/?filter=allissues&jql=project%20%3D%20""S4""%20ORDER%20BY%20created%20DESC"
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 9",,
+"Testes dos parametros dos Requisitos (Peso do pedido)0-3 kg l 3,1-6 kg",,,,
+,"Enviar requisao POST com os seguintes parametros    ""productsWeight"": -1,
+{
+    ""deliveryTime"": 9,
+    ""productsCount"": 5,
+    ""productsWeight"": -1
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-26
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros   ""productsWeight"": 0
+{
+    ""deliveryTime"": 9,
+    ""productsCount"": 5,
+    ""productsWeight"": 0
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros   ""productsWeight"": 0,1
+{
+    ""deliveryTime"": 9,
+    ""productsCount"": 5,
+    ""productsWeight"": 0,1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros   ""productsWeight"": 2.9
+    ""deliveryTime"": 9,
+    ""productsCount"": 5,
+    ""productsWeight"": 2.9
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros   ""productsWeight"" :3
+    ""deliveryTime"": 9,
+    ""productsCount"": 5,
+    ""productsWeight"": 3
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,,,,
+,"Enviar requisao POST com os seguintes parametros   ""productsWeight"" :3,1
+    ""deliveryTime"": 9,
+    ""productsCount"": 11,
+    ""productsWeight"": 3
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros   ""productsWeight"" :3,2
+    ""deliveryTime"": 9,
+    ""productsCount"": 11,
+    ""productsWeight"":3.2
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros   ""productsWeight"" :5.9
+    ""deliveryTime"": 9,
+    ""productsCount"": 11,
+    ""productsWeight"":5.9
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros   ""productsWeight"" :6
+    ""deliveryTime"": 9,
+    ""productsCount"": 11,
+    ""productsWeight"":6
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":00- 08",,
+,"Enviar requisao POST com os seguintes parametros   ""productsWeight"" :6.1
+    ""deliveryTime"": 9,
+    ""productsCount"": 11,
+    ""productsWeight"":6.1
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-27
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"":9",,
+Testes dos parametros dos Requisitos (Prazo de entrega) 20-25 min,,,,
+,"Enviar requisao POST com os seguintes parametros  vizando se o prazo de entrega esta correto
+    ""deliveryTime"": 9,
+    ""productsCount"": 1,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""toBeDeliveredTime"": {
+        ""min"": 20,
+        ""max"": 25
+    },
+    ""clientDeliveryCost"": 0",,
+"Testes dos parametros dos Requisitos (Custo da entrega, $
+) R$3 I 5",,,,
+,"Enviar requisao POST com os seguintes parametros 
+    ""deliveryTime"": 9,
+    ""productsCount"": 1,
+    ""productsWeight"":1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com os seguintes parametros 
+    ""deliveryTime"": 9,
+    ""productsCount"": 11,
+    ""productsWeight"":3.2
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 5,
+    ""clientDeliveryCost"": 0",,
+,,,,
+,"Enviar requisao POST com o parametro  ""deliveryTime"": letras
+{
+    ""deliveryTime"": ""letras"",
+    ""productsCount"": 1,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-28
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com o parametro  ""deliveryTime"": simbolos
+{
+    ""deliveryTime"": ""!@#"",
+    ""productsCount"": 1,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-29
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com o parametro  ""deliveryTime"": sem numeros
+{
+    ""deliveryTime"": 
+    ""productsCount"": 1,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,REPROVADO,"https://lnzzepphyr-1709991917578.atlassian.net/jira/software/c/projects/S4/issues/S4-30?filter=allissues&jql=project%20%3D%20""S4""%20ORDER%20BY%20created%20DESC"
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com o parametro  ""deliveryTime"": apagado
+{
+   
+    ""productsCount"": 1,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-31
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com o parametro  ""productsCount"": ""letras,
+{
+    ""deliveryTime"": 1,
+    ""productsCount"": ""letras,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-32
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com o parametro  ""productsCount"": ""simbolos,
+{
+    ""deliveryTime"": 1,
+    ""productsCount"": ""!@#,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-33
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com o parametro  ""productsCount"": ""sem numero,
+{
+    ""deliveryTime"": 1,
+    ""productsCount"": "",
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-34
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com o parametro  ""productsCount"": ""apagado
+{
+    ""deliveryTime"": 1,
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-35
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com o parametro    ""productsWeight"": letras
+{
+    ""deliveryTime"": 1,
+    ""productsCount"": letras"",
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-36
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com o parametro    ""productsWeight"": simbolos
+{
+    ""deliveryTime"": 1,
+    ""productsCount"": !@#!"",
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-37
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com o parametro    ""productsWeight"": sem numeros
+{
+    ""deliveryTime"": 1,
+    ""productsCount"": "",
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-38
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com o parametro    ""productsWeight"": apagado
+{
+    ""deliveryTime"": 1,
+
+    ""productsWeight"": 1
+}",Código de resposta e status 200 OK,APROVADO,
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
+,"Enviar requisao POST com o todos os  parametros  apagados
+{
+
+}",Código de resposta e status 200 OK,REPROVADO,https://lnzzepphyr-1709991917578.atlassian.net/browse/S4-39
+,,Não há erros na estrutura da resposta,,
+,,"    ""isItPossibleToDeliver"": true,
+    ""hostDeliveryCost"": 3,
+    ""clientDeliveryCost"": 0",,
